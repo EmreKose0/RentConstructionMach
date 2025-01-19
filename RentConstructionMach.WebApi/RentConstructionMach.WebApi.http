@@ -1,0 +1,6 @@
+@RentConstructionMach.WebApi_HostAddress = http://localhost:5160
+
+GET {{RentConstructionMach.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
