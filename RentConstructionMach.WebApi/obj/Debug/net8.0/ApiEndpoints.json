@@ -296,6 +296,80 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "RentConstructionMach.WebApi.Controllers.LocationsController",
+    "Method": "LocationList",
+    "RelativePath": "api/Locations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RentConstructionMach.WebApi.Controllers.LocationsController",
+    "Method": "CreateLocation",
+    "RelativePath": "api/Locations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RentConstructionMach.Application.Features.Mediator.Commands.LocationCommands.CreateLocationCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RentConstructionMach.WebApi.Controllers.LocationsController",
+    "Method": "RemoveLocation",
+    "RelativePath": "api/Locations",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RentConstructionMach.WebApi.Controllers.LocationsController",
+    "Method": "UpdateLocation",
+    "RelativePath": "api/Locations",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RentConstructionMach.Application.Features.Mediator.Commands.LocationCommands.UpdateLocationCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RentConstructionMach.WebApi.Controllers.LocationsController",
+    "Method": "GetLocation",
+    "RelativePath": "api/Locations/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RentConstructionMach.WebApi.Controllers.MachCategoriesController",
     "Method": "MachCategoryList",
     "RelativePath": "api/MachCategories",
