@@ -8,6 +8,9 @@
 
   <ItemGroup>
     <Folder Include="Enums\" />
+    <Folder Include="Features\Mediator\Commands\MachineCommands\" />
+    <Folder Include="Features\Mediator\Handlers\MachineHandlers\" />
+    <Folder Include="Features\Mediator\Queries\MachineQueries\" />
   </ItemGroup>
 
   <ItemGroup>

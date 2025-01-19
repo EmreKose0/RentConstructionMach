@@ -30,6 +30,7 @@ namespace RentConstructionMach.Persistence.Context
         public DbSet<MachinePricing> MachinePricings { get; set; }
         public DbSet<MachineService> MachineServices { get; set; }
         public DbSet<Pricing> Pricings { get; set; }
+        public DbSet<MachineLocation> MachineLocations { get; set; }
 
     }
 }

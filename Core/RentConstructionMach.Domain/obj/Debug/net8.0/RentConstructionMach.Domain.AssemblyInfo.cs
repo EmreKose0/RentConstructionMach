@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RentConstructionMach.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41dda27e1cbb64b81461d1f1d8188c0302d35886")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f2fee28cc867cc78af976ea150c55c9e85067fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("RentConstructionMach.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RentConstructionMach.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

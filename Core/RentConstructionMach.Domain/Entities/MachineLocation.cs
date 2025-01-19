@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace RentConstructionMach.Domain.Entities
 {
-    public class Location
+    public class MachineLocation
     {
+        public int MachineLocationID { get; set; }
+        public int MachineID { get; set; }
+        public Machine Machine { get; set; }
         public int LocationID { get; set; }
-        public string City { get; set; }
-        public List<MachineRequest> MachineRequests { get; set; }
-        public List<MachineLocation> MachineLocations { get; set; }
-
+        public Location Location { get; set; }
     }
 }

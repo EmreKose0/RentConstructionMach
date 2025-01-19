@@ -16,8 +16,6 @@ namespace RentConstructionMach.Domain.Entities
         public MachCategory MachCategory { get; set; }
         public string Model { get; set; }
         public int WorkingWeight { get; set; }
-        
-        public List<int> ListLocationID { get; set; }
         public string   Description { get; set; }
         public bool AvailabilityStatus { get; set; }
 
@@ -29,7 +27,7 @@ namespace RentConstructionMach.Domain.Entities
         public List<MachineService> MachineServices { get; set; }
         public List<MachinePricing> MachinePricing { get; set; }
         public List<MachineRequest> MachineRequest { get; set; }
-
+        public List<MachineLocation> MachineLocations { get; set; }
 
 
     }
