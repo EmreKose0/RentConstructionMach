@@ -8,10 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Enums\" />
-    <Folder Include="Features\Mediator\Commands\CostumerCommands\" />
-    <Folder Include="Features\Mediator\Handlers\CustomerHandlers\" />
-    <Folder Include="Features\Mediator\Queries\CustomerQueries\" />
-    <Folder Include="Features\Mediator\Results\CustomerResults\" />
   </ItemGroup>
 
   <ItemGroup>
