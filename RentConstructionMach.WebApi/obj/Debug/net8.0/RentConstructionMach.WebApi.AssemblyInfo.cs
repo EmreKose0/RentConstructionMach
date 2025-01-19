@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RentConstructionMach.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf8319325c441a2e89ec3323768982cdf85ac80b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41dda27e1cbb64b81461d1f1d8188c0302d35886")]
 [assembly: System.Reflection.AssemblyProductAttribute("RentConstructionMach.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RentConstructionMach.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

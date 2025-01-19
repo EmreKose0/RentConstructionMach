@@ -1,5 +1,79 @@
 [
   {
+    "ContainingType": "RentConstructionMach.WebApi.Controllers.AddServicesController",
+    "Method": "AddServiceList",
+    "RelativePath": "api/AddServices",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RentConstructionMach.WebApi.Controllers.AddServicesController",
+    "Method": "CreateAddService",
+    "RelativePath": "api/AddServices",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RentConstructionMach.Application.Features.Mediator.Commands.AddServiceCommands.CreateAddServiceCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RentConstructionMach.WebApi.Controllers.AddServicesController",
+    "Method": "RemoveAddService",
+    "RelativePath": "api/AddServices",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RentConstructionMach.WebApi.Controllers.AddServicesController",
+    "Method": "UpdateAddService",
+    "RelativePath": "api/AddServices",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RentConstructionMach.Application.Features.Mediator.Commands.AddServiceCommands.UpdateAddServiceCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RentConstructionMach.WebApi.Controllers.AddServicesController",
+    "Method": "GetAddService",
+    "RelativePath": "api/AddServices/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RentConstructionMach.WebApi.Controllers.BlogsController",
     "Method": "BlogList",
     "RelativePath": "api/Blogs",
@@ -135,6 +209,80 @@
     "ContainingType": "RentConstructionMach.WebApi.Controllers.FooterAddressesController",
     "Method": "GetFooterAddress",
     "RelativePath": "api/FooterAddresses/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RentConstructionMach.WebApi.Controllers.MachCategoriesController",
+    "Method": "MachCategoryList",
+    "RelativePath": "api/MachCategories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RentConstructionMach.WebApi.Controllers.MachCategoriesController",
+    "Method": "CreateMachCategory",
+    "RelativePath": "api/MachCategories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RentConstructionMach.Application.Features.Mediator.Commands.CategoryCommands.CreateMachCategoryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RentConstructionMach.WebApi.Controllers.MachCategoriesController",
+    "Method": "RemoveMachCategory",
+    "RelativePath": "api/MachCategories",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RentConstructionMach.WebApi.Controllers.MachCategoriesController",
+    "Method": "UpdateMachCategory",
+    "RelativePath": "api/MachCategories",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RentConstructionMach.Application.Features.Mediator.Commands.MachCategoryCommands.UpdateMachCategoryCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RentConstructionMach.WebApi.Controllers.MachCategoriesController",
+    "Method": "GetMachCategory",
+    "RelativePath": "api/MachCategories/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
