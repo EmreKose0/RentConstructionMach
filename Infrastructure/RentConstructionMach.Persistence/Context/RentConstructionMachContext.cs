@@ -20,5 +20,16 @@ namespace RentConstructionMach.Persistence.Context
         public DbSet<FooterAddress> FooterAddresses { get; set; }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<TagCloud> TagClouds { get; set; }
+        public DbSet<Brand> Brands { get; set; }
+        public DbSet<Location> Locations { get; set; }
+        public DbSet<MachCategory> MachCategories { get; set; }
+        public DbSet<Machine> Machines { get; set; }
+        public DbSet<MachineRequest> MachineRequests { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<AddService> AddServices { get; set; }
+        public DbSet<MachinePricing> MachinePricings { get; set; }
+        public DbSet<MachineService> MachineServices { get; set; }
+        public DbSet<Pricing> Pricings { get; set; }
+
     }
 }
