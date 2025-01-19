@@ -1,0 +1,16 @@
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\Core\RentConstructionMach.Application\bin\Debug\net8.0\RentConstructionMach.Application.deps.json
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\Core\RentConstructionMach.Application\bin\Debug\net8.0\RentConstructionMach.Application.dll
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\Core\RentConstructionMach.Application\bin\Debug\net8.0\RentConstructionMach.Application.pdb
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\Core\RentConstructionMach.Application\bin\Debug\net8.0\RentConstructionMach.Domain.dll
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\Core\RentConstructionMach.Application\bin\Debug\net8.0\RentConstructionMach.Domain.pdb
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\Core\RentConstructionMach.Application\obj\Debug\net8.0\RentConstructionMach.Application.csproj.AssemblyReference.cache
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\Core\RentConstructionMach.Application\obj\Debug\net8.0\RentConstructionMach.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\Core\RentConstructionMach.Application\obj\Debug\net8.0\RentConstructionMach.Application.AssemblyInfoInputs.cache
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\Core\RentConstructionMach.Application\obj\Debug\net8.0\RentConstructionMach.Application.AssemblyInfo.cs
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\Core\RentConstructionMach.Application\obj\Debug\net8.0\RentConstructionMach.Application.csproj.CoreCompileInputs.cache
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\Core\RentConstructionMach.Application\obj\Debug\net8.0\RentConstructionMach.Application.sourcelink.json
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\Core\RentConstructionMach.Application\obj\Debug\net8.0\RentCons.0ABA7C23.Up2Date
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\Core\RentConstructionMach.Application\obj\Debug\net8.0\RentConstructionMach.Application.dll
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\Core\RentConstructionMach.Application\obj\Debug\net8.0\refint\RentConstructionMach.Application.dll
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\Core\RentConstructionMach.Application\obj\Debug\net8.0\RentConstructionMach.Application.pdb
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\Core\RentConstructionMach.Application\obj\Debug\net8.0\ref\RentConstructionMach.Application.dll
