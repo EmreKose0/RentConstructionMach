@@ -10,7 +10,7 @@ namespace RentConstructionMach.Domain.Entities
     public class Machine
     {
         public int MachineID { get; set; }
-        public int BrandId { get; set; }
+        public int BrandID { get; set; }
         public Brand Brand { get; set; }
         public int MachCategoryID { get; set; }
         public MachCategory MachCategory { get; set; }

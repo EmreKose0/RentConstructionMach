@@ -10,7 +10,7 @@ namespace RentConstructionMach.Application.Features.Mediator.Results.MachineResu
     public class GetMachineQueryResult
     {
         public int MachineID { get; set; }
-        public int BrandId { get; set; }
+        public int BrandID { get; set; }
         public int MachCategoryID { get; set; }
         public string Model { get; set; }
         public int WorkingWeight { get; set; }
