@@ -953,6 +953,7 @@
         "dependencies": {
           "MediatR": "12.4.1",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
           "RentConstructionMach.Domain": "1.0.0"
         },
         "compile": {

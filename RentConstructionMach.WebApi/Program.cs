@@ -1,9 +1,23 @@
-var builder = WebApplication.CreateBuilder(args);
+using RentConstructionMach.Persistence.Context;
+using RentConstructionMach.Application.Services;
+using RentConstructionMach.Application.Interfaces;
+using RentConstructionMach.Persistence.Repositories;
+using RentConstructionMach.Application.Interfaces.TagCloudInterfaces;
+using RentConstructionMach.Persistence.Repositories.TagCloudRepositories;
 
-// Add services to the container.
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddHttpClient();
+
+builder.Services.AddScoped<RentConstructionMachContext>();
+
+builder.Services.AddApplicationService(builder.Configuration);
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped(typeof(ITagCloudRepository), typeof(TagCloudRepository));
+
+
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

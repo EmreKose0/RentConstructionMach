@@ -19,6 +19,6 @@ namespace RentConstructionMach.Persistence.Context
         }
         public DbSet<FooterAddress> FooterAddresses { get; set; }
         public DbSet<Blog> Blogs { get; set; }
-        public DbSet<TagCloud> tagClouds { get; set; }
+        public DbSet<TagCloud> TagClouds { get; set; }
     }
 }
