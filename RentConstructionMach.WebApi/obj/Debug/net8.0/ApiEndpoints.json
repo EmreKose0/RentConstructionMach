@@ -528,6 +528,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "RentConstructionMach.WebApi.Controllers.MachineRequestsController",
+    "Method": "CreateMachineRequest",
+    "RelativePath": "api/MachineRequests",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RentConstructionMach.Application.Features.Mediator.Commands.MachineRequestCommands.CreateMachineRequestCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RentConstructionMach.WebApi.Controllers.MachinesController",
     "Method": "MachineList",
     "RelativePath": "api/Machines",

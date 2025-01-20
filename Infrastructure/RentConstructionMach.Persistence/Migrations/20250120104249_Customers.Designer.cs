@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RentConstructionMach.Persistence.Context;
 
@@ -11,9 +12,11 @@ using RentConstructionMach.Persistence.Context;
 namespace RentConstructionMach.Persistence.Migrations
 {
     [DbContext(typeof(RentConstructionMachContext))]
-    partial class RentConstructionMachContextModelSnapshot : ModelSnapshot
+    [Migration("20250120104249_Customers")]
+    partial class Customers
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -331,9 +334,8 @@ namespace RentConstructionMach.Persistence.Migrations
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("longtext");
+                    b.Property<decimal?>("TotalPrice")
+                        .HasColumnType("decimal(65,30)");
 
                     b.HasKey("MachineRequestID");
 

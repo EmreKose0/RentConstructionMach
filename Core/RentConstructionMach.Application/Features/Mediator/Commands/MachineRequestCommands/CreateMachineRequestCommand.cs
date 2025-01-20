@@ -1,34 +1,26 @@
-﻿using System;
+﻿using MediatR;
+using RentConstructionMach.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RentConstructionMach.Domain.Entities
+namespace RentConstructionMach.Application.Features.Mediator.Commands.MachineRequestCommands
 {
-    public class MachineRequest
+    public class CreateMachineRequestCommand : IRequest
     {
-        public int MachineRequestID { get; set; }
         public int MachineID { get; set; }
-        public Machine Machine { get; set; }
         public int Quantity { get; set; }
         public int LocationID { get; set; }
-        public Location Location { get; set; }
         public string DistrictName { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public string Description { get; set; }
-
-        //public int CustomerID { get; set; }
-        //public Customer Customer { get; set; }
         public string CustomerName { get; set; }
         public string CustomerSurname { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
         public string CompanyName { get; set; }
-        public string Status { get; set; }
-
-
     }
 }

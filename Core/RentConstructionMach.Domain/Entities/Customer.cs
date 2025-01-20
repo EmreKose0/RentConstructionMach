@@ -14,6 +14,6 @@ namespace RentConstructionMach.Domain.Entities
         public string Email { get; set; }
         public string Phone { get; set; }
         public string CompanyName { get; set; }
-        public List<MachineRequest> MachineRequests { get; set; }
+        //public List<MachineRequest> MachineRequests { get; set; }
     }
 }
