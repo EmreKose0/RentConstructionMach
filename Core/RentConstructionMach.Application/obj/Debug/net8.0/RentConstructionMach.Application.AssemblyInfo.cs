@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RentConstructionMach.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec955db8315f0e6fa5f347fd32565ca96b920737")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3a9ce66f4f2309f36ec9cbc4db714410ef530f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("RentConstructionMach.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RentConstructionMach.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

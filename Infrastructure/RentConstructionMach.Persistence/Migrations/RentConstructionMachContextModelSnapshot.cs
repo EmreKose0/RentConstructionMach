@@ -39,6 +39,61 @@ namespace RentConstructionMach.Persistence.Migrations
                     b.ToTable("AddServices");
                 });
 
+            modelBuilder.Entity("RentConstructionMach.Domain.Entities.AppRole", b =>
+                {
+                    b.Property<int>("AppRoleID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("AppRoleID"));
+
+                    b.Property<string>("AppRoleName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("AppRoleID");
+
+                    b.ToTable("AppRoles");
+                });
+
+            modelBuilder.Entity("RentConstructionMach.Domain.Entities.AppUser", b =>
+                {
+                    b.Property<int>("AppUserID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("AppUserID"));
+
+                    b.Property<int>("AppRoleID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Surname")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("AppUserID");
+
+                    b.HasIndex("AppRoleID");
+
+                    b.ToTable("AppUsers");
+                });
+
             modelBuilder.Entity("RentConstructionMach.Domain.Entities.Blog", b =>
                 {
                     b.Property<int>("BlogID")
@@ -409,6 +464,17 @@ namespace RentConstructionMach.Persistence.Migrations
                     b.ToTable("TagClouds");
                 });
 
+            modelBuilder.Entity("RentConstructionMach.Domain.Entities.AppUser", b =>
+                {
+                    b.HasOne("RentConstructionMach.Domain.Entities.AppRole", "AppRole")
+                        .WithMany("AppUsers")
+                        .HasForeignKey("AppRoleID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AppRole");
+                });
+
             modelBuilder.Entity("RentConstructionMach.Domain.Entities.Machine", b =>
                 {
                     b.HasOne("RentConstructionMach.Domain.Entities.Brand", "Brand")
@@ -518,6 +584,11 @@ namespace RentConstructionMach.Persistence.Migrations
             modelBuilder.Entity("RentConstructionMach.Domain.Entities.AddService", b =>
                 {
                     b.Navigation("MachineServices");
+                });
+
+            modelBuilder.Entity("RentConstructionMach.Domain.Entities.AppRole", b =>
+                {
+                    b.Navigation("AppUsers");
                 });
 
             modelBuilder.Entity("RentConstructionMach.Domain.Entities.Blog", b =>

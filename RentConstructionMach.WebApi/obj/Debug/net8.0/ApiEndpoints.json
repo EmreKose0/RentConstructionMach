@@ -370,6 +370,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "RentConstructionMach.WebApi.Controllers.LoginController",
+    "Method": "Index",
+    "RelativePath": "api/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "RentConstructionMach.Application.Features.Mediator.Queries.AppUserQueries.GetCheckAppUserQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RentConstructionMach.WebApi.Controllers.MachCategoriesController",
     "Method": "MachCategoryList",
     "RelativePath": "api/MachCategories",

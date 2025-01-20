@@ -118,3 +118,11 @@ C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach
 C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\obj\Debug\net8.0\RentConstructionMach.WebApi.pdb
 C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\obj\Debug\net8.0\RentConstructionMach.WebApi.genruntimeconfig.cache
 C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\obj\Debug\net8.0\ref\RentConstructionMach.WebApi.dll
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
