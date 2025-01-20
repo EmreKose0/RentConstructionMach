@@ -4,6 +4,8 @@ using RentConstructionMach.Application.Interfaces;
 using RentConstructionMach.Persistence.Repositories;
 using RentConstructionMach.Application.Interfaces.TagCloudInterfaces;
 using RentConstructionMach.Persistence.Repositories.TagCloudRepositories;
+using RentConstructionMach.Application.Interfaces.MachineInterfaces;
+using RentConstructionMach.Persistence.Repositories.MachinePricingRepositories;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpClient();
@@ -13,6 +15,7 @@ builder.Services.AddScoped<RentConstructionMachContext>();
 builder.Services.AddApplicationService(builder.Configuration);
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped(typeof(ITagCloudRepository), typeof(TagCloudRepository));
+builder.Services.AddScoped(typeof(IMachinePricingRepository), typeof(MachinePricingRepository));
 
 
 

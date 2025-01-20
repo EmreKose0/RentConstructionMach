@@ -518,6 +518,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "RentConstructionMach.WebApi.Controllers.MachinePricingsController",
+    "Method": "GetMachinePricingWithMachineList",
+    "RelativePath": "api/MachinePricings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "RentConstructionMach.WebApi.Controllers.MachinesController",
     "Method": "MachineList",
     "RelativePath": "api/Machines",
