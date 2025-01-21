@@ -10,6 +10,10 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using RentConstructionMach.Application.Tools;
+using RentConstructionMach.Application.Interfaces.MachineRequestInterfaces;
+using RentConstructionMach.Persistence.Repositories.MachineRequestRepositories;
+using RentConstructionMach.Application.Interfaces.RabbitMQInterfaces;
+using RentConstructionMach.Persistence.Repositories.RabbitMQRepository.cs;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpClient();
@@ -47,6 +51,8 @@ builder.Services.AddApplicationService(builder.Configuration);
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped(typeof(ITagCloudRepository), typeof(TagCloudRepository));
 builder.Services.AddScoped(typeof(IMachinePricingRepository), typeof(MachinePricingRepository));
+builder.Services.AddScoped(typeof(IMachineRequestRepository), typeof(MachineRequestRepository));
+builder.Services.AddScoped(typeof(IRabbitMQRepository), typeof(RabbitMQRepository));
 
 
 

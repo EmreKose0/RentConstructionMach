@@ -1,6 +1,9 @@
 ﻿using MediatR;
 using RentConstructionMach.Application.Features.Mediator.Commands.MachineRequestCommands;
 using RentConstructionMach.Application.Interfaces;
+using RentConstructionMach.Application.Interfaces.MachineRequestInterfaces;
+using RentConstructionMach.Application.Interfaces.RabbitMQInterfaces;
+using RentConstructionMach.Application.ViewModels;
 using RentConstructionMach.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -12,11 +15,15 @@ namespace RentConstructionMach.Application.Features.Mediator.Handlers.MachineReq
 {
     public class CreateMachineRequestCommandHandler : IRequestHandler<CreateMachineRequestCommand>
     {
+        private readonly IMachineRequestRepository _machineRequestRepository;
         private readonly IRepository<MachineRequest> _repository;
+        private readonly IRabbitMQRepository _rabbitMqRepository;
 
-        public CreateMachineRequestCommandHandler(IRepository<MachineRequest> repository)
+        public CreateMachineRequestCommandHandler(IRepository<MachineRequest> repository, IRabbitMQRepository rabbitMqRepository, IMachineRequestRepository machineRequestRepository)
         {
             _repository = repository;
+            _rabbitMqRepository = rabbitMqRepository;
+            _machineRequestRepository = machineRequestRepository;
         }
 
         public async Task Handle(CreateMachineRequestCommand request, CancellationToken cancellationToken)
@@ -37,8 +44,35 @@ namespace RentConstructionMach.Application.Features.Mediator.Handlers.MachineReq
                 Phone = request.Phone,
                 CompanyName = request.CompanyName,
 
+
             });
+            var (model, brand) = await _machineRequestRepository.GetMachineNameAndBrandAsync(request.MachineID);
+            var LocationName = await _machineRequestRepository.GetLocationNameAsync(request.LocationID);
+
+
+            var viewModel = new MachineRequestViewModel {
+                MachineID = request.MachineID,
+                Model = model,
+                Brand = brand,
+                Quantity = request.Quantity,
+                LocationID = request.LocationID,
+                LocationName = LocationName,
+                DistrictName = request.DistrictName,
+                StartDate = request.StartDate,
+                EndDate = request.EndDate,
+                Description = request.Description,
+                CustomerName = request.CustomerName,
+                CustomerSurname = request.CustomerSurname,
+                Email = request.Email,
+                Phone = request.Phone,
+                CompanyName = request.CompanyName,
+
+            };
+
+            await _rabbitMqRepository.SendMessageAsync("MachineQueue", viewModel);
+
         }
     }
 }
+
 

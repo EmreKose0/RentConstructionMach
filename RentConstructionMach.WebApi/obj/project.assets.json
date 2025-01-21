@@ -1145,6 +1145,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.12",
           "Pomelo.EntityFrameworkCore.MySql": "8.0.2",
+          "RabbitMQ.Client": "7.0.0",
           "RentConstructionMach.Application": "1.0.0"
         },
         "compile": {
