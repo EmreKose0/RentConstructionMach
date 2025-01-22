@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RentConstructionMach.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c63093533fd357fb9065d70a171a9422569e7c97")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1729f7d41f502d937533b014b0f074cc81ffd78")]
 [assembly: System.Reflection.AssemblyProductAttribute("RentConstructionMach.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RentConstructionMach.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

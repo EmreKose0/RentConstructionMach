@@ -24,8 +24,4 @@
     <ProjectReference Include="..\..\Core\RentConstructionMach.Application\RentConstructionMach.Application.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Managers\" />
-  </ItemGroup>
-
 </Project>

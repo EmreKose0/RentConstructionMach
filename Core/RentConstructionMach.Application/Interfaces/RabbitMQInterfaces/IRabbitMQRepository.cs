@@ -9,6 +9,6 @@ namespace RentConstructionMach.Application.Interfaces.RabbitMQInterfaces
 {
     public interface IRabbitMQRepository
     {
-        Task SendMessageAsync(string queueName, MachineRequestViewModel machineRequest);
+        Task SendMessageAsync(MachineRequestViewModel machineRequest);
     }
 }

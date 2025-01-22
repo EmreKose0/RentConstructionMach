@@ -69,7 +69,9 @@ namespace RentConstructionMach.Application.Features.Mediator.Handlers.MachineReq
 
             };
 
-            await _rabbitMqRepository.SendMessageAsync("MachineQueue", viewModel);
+            await _rabbitMqRepository.SendMessageAsync(viewModel);
+            //await _rabbitMqRepository.SendMessageAsync("MachineQueue", viewModel);
+
 
         }
     }
