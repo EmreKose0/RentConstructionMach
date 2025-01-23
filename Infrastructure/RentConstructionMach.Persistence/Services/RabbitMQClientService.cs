@@ -39,6 +39,7 @@ namespace RentConstructionMach.Persistence.Managers
         public void Dispose()
         {
             _channel?.Dispose();
+            
             _connection?.Dispose();
 
             _logger.LogInformation("RabbitMQ Disconnected.");

@@ -16,6 +16,7 @@ using RentConstructionMach.Application.Interfaces.RabbitMQInterfaces;
 using RentConstructionMach.Persistence.Repositories.RabbitMQRepository.cs;
 using RabbitMQ.Client;
 using RentConstructionMach.Persistence.Managers;
+using RentConstructionMach.Persistence.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpClient();
@@ -56,8 +57,11 @@ builder.Services.AddScoped(typeof(IMachinePricingRepository), typeof(MachinePric
 builder.Services.AddScoped(typeof(IMachineRequestRepository), typeof(MachineRequestRepository));
 builder.Services.AddScoped(typeof(IRabbitMQRepository), typeof(RabbitMQRepository));
 
-builder.Services.AddSingleton(sp => new ConnectionFactory() { Uri = new Uri ("amqps://ontluugw:PRQ2YOamVQz3lDH8eUk_hkFn4AC-1fUe@seal.lmq.cloudamqp.com/ontluugw") } );
+builder.Services.AddSingleton(sp => new ConnectionFactory() { Uri = new Uri ("amqps://ontluugw:PRQ2YOamVQz3lDH8eUk_hkFn4AC-1fUe@seal.lmq.cloudamqp.com/ontluugw"), ConsumerDispatchConcurrency = 2 } );
 builder.Services.AddSingleton<RabbitMQClientService>();
+
+var redisConfig = $"{builder.Configuration["Redis:Host"]}:{builder.Configuration["Redis:Port"]}";
+builder.Services.AddSingleton(new RedisService(redisConfig));
 
 builder.Services.AddControllers();
 
@@ -72,6 +76,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+
 
 app.UseHttpsRedirection();
 
