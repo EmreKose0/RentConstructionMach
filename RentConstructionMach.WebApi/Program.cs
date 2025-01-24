@@ -17,6 +17,8 @@ using RentConstructionMach.Persistence.Repositories.RabbitMQRepository.cs;
 using RabbitMQ.Client;
 using RentConstructionMach.Persistence.Managers;
 using RentConstructionMach.Persistence.Services;
+using RentConstructionMach.Application.Interfaces.CacheInterfaces;
+using RentConstructionMach.Persistence.Repositories.CacheRepositories;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpClient();
@@ -56,6 +58,7 @@ builder.Services.AddScoped(typeof(ITagCloudRepository), typeof(TagCloudRepositor
 builder.Services.AddScoped(typeof(IMachinePricingRepository), typeof(MachinePricingRepository));
 builder.Services.AddScoped(typeof(IMachineRequestRepository), typeof(MachineRequestRepository));
 builder.Services.AddScoped(typeof(IRabbitMQRepository), typeof(RabbitMQRepository));
+builder.Services.AddScoped(typeof(ICacheService), typeof(CacheService));
 
 builder.Services.AddSingleton(sp => new ConnectionFactory() { Uri = new Uri ("amqps://ontluugw:PRQ2YOamVQz3lDH8eUk_hkFn4AC-1fUe@seal.lmq.cloudamqp.com/ontluugw"), ConsumerDispatchConcurrency = 2 } );
 builder.Services.AddSingleton<RabbitMQClientService>();
