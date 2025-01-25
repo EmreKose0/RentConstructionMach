@@ -64,7 +64,7 @@ builder.Services.AddScoped(typeof(IMachineRequestRepository), typeof(MachineRequ
 builder.Services.AddScoped(typeof(IRabbitMQRepository), typeof(RabbitMQRepository));
 builder.Services.AddScoped(typeof(ICacheService), typeof(CacheService));
 
-builder.Services.AddSingleton(sp => new ConnectionFactory() { Uri = new Uri ("amqps://ontluugw:PRQ2YOamVQz3lDH8eUk_hkFn4AC-1fUe@seal.lmq.cloudamqp.com/ontluugw"), ConsumerDispatchConcurrency = 2 } );
+builder.Services.AddSingleton(sp => new ConnectionFactory() { Uri = new Uri(builder.Configuration["RabbitMQ:Uri"]), ConsumerDispatchConcurrency = 2 } );
 builder.Services.AddSingleton<RabbitMQClientService>();
 
 var redisConfig = $"{builder.Configuration["Redis:Host"]}:{builder.Configuration["Redis:Port"]}";

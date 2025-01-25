@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using RentConstructionMach.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -9,11 +10,18 @@ using System.Threading.Tasks;
 
 namespace RentConstructionMach.Persistence.Context
 {
-    public class RentConstructionMachContext :DbContext
+    public class RentConstructionMachContext : DbContext
     {
+        private readonly IConfiguration _configuration;
+
+        public RentConstructionMachContext(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql("server=localhost;port=3306;uid=emrek;pwd=1234;Database=rentconstructionmachinedb;",
+            optionsBuilder.UseMySql(_configuration.GetConnectionString("DefaultConnection"),
               new MySqlServerVersion(new Version(9, 0, 0)),
               options => options.EnableRetryOnFailure());
             //optionsBuilder.UseSqlServer(
