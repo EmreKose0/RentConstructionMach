@@ -26,9 +26,11 @@ namespace RentConstructionMach.Application.MachCategorys.Mediator.Handlers.Categ
         public async Task<List<GetMachCategoryQueryResult>> Handle(GetMachCategoryQuery request, CancellationToken cancellationToken)
         {
             var cacheKey = "machineCategories";
-            var cachedData = await _cacheService.GetAsync<List<GetMachCategoryQueryResult>>(cacheKey);
+            //var cachedData = await _cacheService.GetAsync<List<GetMachCategoryQueryResult>>(cacheKey);
+            var cachedData = await _cacheService.GetSetMembersAsync<GetMachCategoryQueryResult>(cacheKey);
 
-            if (cachedData != null)
+
+            if (cachedData.Count != 0)
             {
                 return cachedData;
             }
@@ -43,7 +45,12 @@ namespace RentConstructionMach.Application.MachCategorys.Mediator.Handlers.Categ
 
             }).ToList();
 
-            await _cacheService.SetAsync(cacheKey, machineCategories, TimeSpan.FromMinutes(30));
+            //await _cacheService.SetAsync(cacheKey, machineCategories, TimeSpan.FromMinutes(30));
+
+            foreach (var category in machineCategories)
+            {
+                await _cacheService.AddToSetAsync(cacheKey, category);
+            }
 
             return machineCategories;
         }

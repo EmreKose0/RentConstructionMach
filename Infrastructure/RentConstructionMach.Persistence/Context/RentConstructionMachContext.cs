@@ -13,9 +13,13 @@ namespace RentConstructionMach.Persistence.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql("server=45.143.99.46;port=3306;uid=Saber;pwd=Saber*Emre02;Database=rentconstructionmachinedb;",
+            optionsBuilder.UseMySql("server=localhost;port=3306;uid=emrek;pwd=1234;Database=rentconstructionmachinedb;",
               new MySqlServerVersion(new Version(9, 0, 0)),
               options => options.EnableRetryOnFailure());
+            //optionsBuilder.UseSqlServer(
+            //    "Server=localhost;Database=rentconstructionmachinedb;Trusted_Connection=True;TrustServerCertificate=True;",
+            //    options => options.EnableRetryOnFailure()
+            //   );
         }
         public DbSet<FooterAddress> FooterAddresses { get; set; }
         public DbSet<Blog> Blogs { get; set; }
@@ -34,5 +38,6 @@ namespace RentConstructionMach.Persistence.Context
         public DbSet<AppRole> AppRoles { get; set; }
         public DbSet<AppUser> AppUsers { get; set; }
 
+        
     }
 }

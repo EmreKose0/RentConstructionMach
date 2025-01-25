@@ -19,6 +19,7 @@ using RentConstructionMach.Persistence.Managers;
 using RentConstructionMach.Persistence.Services;
 using RentConstructionMach.Application.Interfaces.CacheInterfaces;
 using RentConstructionMach.Persistence.Repositories.CacheRepositories;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpClient();
@@ -33,6 +34,9 @@ builder.Services.AddCors(opt =>
     });
 }); //API taraf?nda frontend taraf?nda SignalR ile tüketmeye izin veriyor
 builder.Services.AddSignalR();
+
+
+
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
 {

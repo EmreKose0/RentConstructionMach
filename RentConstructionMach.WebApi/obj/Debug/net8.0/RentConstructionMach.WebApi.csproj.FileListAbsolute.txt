@@ -101,7 +101,6 @@ C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach
 C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\obj\Debug\net8.0\RentConstructionMach.WebApi.AssemblyInfoInputs.cache
 C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\obj\Debug\net8.0\RentConstructionMach.WebApi.AssemblyInfo.cs
 C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\obj\Debug\net8.0\RentConstructionMach.WebApi.csproj.CoreCompileInputs.cache
-C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\obj\Debug\net8.0\RentConstructionMach.WebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\obj\Debug\net8.0\RentConstructionMach.WebApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\obj\Debug\net8.0\RentConstructionMach.WebApi.sourcelink.json
 C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\obj\Debug\net8.0\staticwebassets.build.json
@@ -127,3 +126,5 @@ C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach
 C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\bin\Debug\net8.0\RabbitMQ.Client.dll
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\RentConstructionMach.WebApi\bin\Debug\net8.0\StackExchange.Redis.dll
