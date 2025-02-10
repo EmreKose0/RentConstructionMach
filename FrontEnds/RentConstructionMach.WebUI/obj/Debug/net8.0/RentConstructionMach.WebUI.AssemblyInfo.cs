@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RentConstructionMach.WebUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49434babc8e3511286cefd6a877b15200346283b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+262fef774d9508d7753d9a72d8b8a01a9a9444a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("RentConstructionMach.WebUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RentConstructionMach.WebUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
