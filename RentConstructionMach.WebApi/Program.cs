@@ -23,18 +23,30 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpClient();
-builder.Services.AddCors(opt =>
-{
-    opt.AddPolicy("CorsPolicy", builder =>
-    {
-        builder.AllowAnyHeader()
-        .AllowAnyMethod()
-        .SetIsOriginAllowed((host) => true)
-        .AllowCredentials();
-    });
-}); //API taraf?nda frontend taraf?nda SignalR ile tüketmeye izin veriyor
+//builder.Services.AddCors(opt =>
+//{
+//    opt.AddPolicy("CorsPolicy", builder =>
+//    {
+//        builder.AllowAnyHeader()
+//        .AllowAnyMethod()
+//        .SetIsOriginAllowed((host) => true)
+//        .AllowCredentials();
+//    });
+//}); //API taraf?nda frontend taraf?nda SignalR ile tüketmeye izin veriyor
 builder.Services.AddSignalR();
 
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy =>
+                      {
+                          policy.AllowAnyOrigin()
+                                .AllowAnyMethod()
+                                .AllowAnyHeader();
+                      });
+});
 
 
 
@@ -84,6 +96,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors(MyAllowSpecificOrigins);
 
 
 app.UseHttpsRedirection();

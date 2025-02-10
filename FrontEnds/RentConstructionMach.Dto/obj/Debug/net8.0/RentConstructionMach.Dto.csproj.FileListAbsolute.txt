@@ -1,0 +1,12 @@
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\FrontEnds\RentConstructionMach.Dto\bin\Debug\net8.0\RentConstructionMach.Dto.deps.json
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\FrontEnds\RentConstructionMach.Dto\bin\Debug\net8.0\RentConstructionMach.Dto.dll
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\FrontEnds\RentConstructionMach.Dto\bin\Debug\net8.0\RentConstructionMach.Dto.pdb
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\FrontEnds\RentConstructionMach.Dto\obj\Debug\net8.0\RentConstructionMach.Dto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\FrontEnds\RentConstructionMach.Dto\obj\Debug\net8.0\RentConstructionMach.Dto.AssemblyInfoInputs.cache
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\FrontEnds\RentConstructionMach.Dto\obj\Debug\net8.0\RentConstructionMach.Dto.AssemblyInfo.cs
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\FrontEnds\RentConstructionMach.Dto\obj\Debug\net8.0\RentConstructionMach.Dto.csproj.CoreCompileInputs.cache
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\FrontEnds\RentConstructionMach.Dto\obj\Debug\net8.0\RentConstructionMach.Dto.sourcelink.json
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\FrontEnds\RentConstructionMach.Dto\obj\Debug\net8.0\RentConstructionMach.Dto.dll
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\FrontEnds\RentConstructionMach.Dto\obj\Debug\net8.0\refint\RentConstructionMach.Dto.dll
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\FrontEnds\RentConstructionMach.Dto\obj\Debug\net8.0\RentConstructionMach.Dto.pdb
+C:\Users\emrek\RentConstructionMachine\RentConstructionMach\FrontEnds\RentConstructionMach.Dto\obj\Debug\net8.0\ref\RentConstructionMach.Dto.dll

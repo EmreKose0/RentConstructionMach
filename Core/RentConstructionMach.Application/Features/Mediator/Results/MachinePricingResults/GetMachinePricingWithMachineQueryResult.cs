@@ -16,5 +16,6 @@ namespace RentConstructionMach.Application.Features.Mediator.Results.MachinePric
         public decimal DailyAmount { get; set; }
         public decimal MonthlyAmount { get; set; }
         //public string PricingName { get; set; }
+
     }
 }
